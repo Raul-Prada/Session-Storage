@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="Css/css1.css">
 </head>
 <body>
-   <p id="start">Hi could you write your name?</p>
-    <input type="text" id="nombre" placeholder="Write your name">
-     <button id="save">Save</button>
+    <form id="user-form">
+        <p id="start">Hi could you write your name?</p>
+        <input type="text" id="nombre" placeholder="Write your name" required>
+        <p id="city">Could you tell what is your city?</p>
+        <input type="text" id="ciudad" placeholder="Write your city" required>
+        <button id="save" type="submit">Save</button>
+    </form>
 </body>
 </html>
