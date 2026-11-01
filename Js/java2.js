@@ -1,6 +1,6 @@
 function show() {
-    const name = sessionStorage.getItem("name");
-    const city = sessionStorage.getItem("city");
+    const name = localStorage.getItem("name");
+    const city = localStorage.getItem("city");
 
     if (name === null || city === null) {
         document.getElementById("greats").textContent = "There is not any name or city saved in our database.";
@@ -11,8 +11,8 @@ function show() {
 }
 
 function remove() {
-    sessionStorage.removeItem("name");
-    sessionStorage.removeItem("city");
+    localStorage.removeItem("name");
+    localStorage.removeItem("city");
     show();
 }
 document.addEventListener("DOMContentLoaded", show);

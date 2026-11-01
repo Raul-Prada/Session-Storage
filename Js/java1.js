@@ -4,8 +4,8 @@ function save(event) {
     const name = document.getElementById("nombre").value;
     const city = document.getElementById("ciudad").value;
     
-    sessionStorage.setItem("name", name);
-    sessionStorage.setItem("city", city);
+    localStorage.setItem("name", name);
+    localStorage.setItem("city", city);
 
     window.location.href = "page2.html";
 }
