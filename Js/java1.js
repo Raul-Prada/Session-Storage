@@ -1,4 +1,6 @@
-function save() {
+function save(event) {
+    event.preventDefault();
+
     const name = document.getElementById("nombre").value;
     const city = document.getElementById("ciudad").value;
     
@@ -7,4 +9,4 @@ function save() {
 
     window.location.href = "page2.html";
 }
-document.getElementById("save").addEventListener("click", save);
+document.getElementById("user-form").addEventListener("submit", save);
